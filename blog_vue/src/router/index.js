@@ -22,7 +22,11 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: "history", //后端支持可开
+  scrollBehavior: () => ({
+    y: 0
+  })
 });
 
 export default router;
